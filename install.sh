@@ -10,7 +10,9 @@ echo "Installed oh-my-zsh"
 
 # Rewrite ZSH configuration
 rm $HOME/.zshrc
-cp $HOME/dotfiles/.zshrc $HOME/.zshrc
+rm $HOME/.oh-my-zsh/themes/robbyrussell.zsh-theme
+cp $HOME/dotfiles/oh-my-zsh/.zshrc $HOME/.zshrc
+cp $HOME/dotfiles/oh-my-zsh/robbyrussell.zsh-theme $HOME/.oh-my-zsh/themes/robbyrussell.zsh-theme
 
 # additional oh-my-zsh plugins
 zsh -c 'git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions'
